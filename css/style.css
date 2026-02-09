@@ -136,3 +136,12 @@ body{
 @keyframes fall{
   to{ transform:translateY(110vh) rotate(360deg); }
 }
+/* ===== FORCE BIG TEXT OVERRIDE ===== */
+.line{
+  font-size: 26px !important;
+}
+
+.title{
+  font-size: 50px !important;
+  line-height: 1.2;
+}
