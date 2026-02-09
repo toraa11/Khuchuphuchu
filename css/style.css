@@ -184,3 +184,20 @@ body{
     transform: translateY(110vh) rotate(360deg);
   }
 }
+.petal{
+  position: fixed;
+  top: -30px;
+  width: 16px;
+  height: 16px;
+  background: rgba(255,182,193,0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  animation: fall linear infinite;
+}
+
+@keyframes fall{
+  to{
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
