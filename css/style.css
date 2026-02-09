@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Playfair+Display:wght@700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:linear-gradient(#fde2e4,#fff1f2);
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+.page{
+  min-height:100vh;
+  padding:80px 20px;
+  text-align:center;
+  position:relative;
+}
+
+.mid{
+  font-size:18px;
+  color:#b85c7a;
+}
+
+.big{
+  font-size:38px;
+  font-family:'Playfair Display',serif;
+  color:#5a1a2f;
+  margin:15px 0;
+}
+
+.box{
+  background:#f7cfd8;
+  padding:20px;
+  border-radius:20px;
+  width:90%;
+  max-width:500px;
+  margin:25px auto;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.btn{
+  background:#ff7aa2;
+  color:white;
+  border:none;
+  padding:14px 30px;
+  font-size:16px;
+  border-radius:30px;
+  cursor:pointer;
+  margin-top:25px;
+}
+
+.next{
+  position:absolute;
+  bottom:30px;
+  right:30px;
+  font-size:22px;
+  text-decoration:none;
+  color:#5a1a2f;
+}
+
+.menu{
+  position:fixed;
+  top:20px;
+  left:20px;
+  font-size:28px;
+  cursor:pointer;
+  z-index:10;
+}
+
+.menu-panel{
+  position:fixed;
+  top:0;
+  left:-260px;
+  width:250px;
+  height:100%;
+  background:#fff;
+  padding:30px;
+  transition:.4s;
+  z-index:20;
+}
+
+.menu-panel a{
+  display:block;
+  margin:15px 0;
+  text-decoration:none;
+  color:#5a1a2f;
+}
+
+.menu-panel.show{
+  left:0;
+}
+
+/* petals */
+.petals{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background:url("../images/petals.png") repeat;
+  animation:fall 20s linear infinite;
+  opacity:0.25;
+  z-index:-1;
+}
+
+@keyframes fall{
+  from{background-position:0 -1000px;}
+  to{background-position:0 1000px;}
+}
+
+/* cards */
+.card{
+  background:white;
+  padding:20px;
+  margin:20px auto;
+  width:90%;
+  max-width:320px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.photo{
+  width:200px;
+  border-radius:20px;
+  transform:rotate(-5deg);
+  border:6px solid white;
+  margin:15px;
+}
+
+.seal{
+  animation:pop .6s ease forwards;
+}
+
+@keyframes pop{
+  0%{transform:scale(.5);opacity:0;}
+  100%{transform:scale(1);opacity:1;}
+}
